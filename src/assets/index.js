@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "/public/tylogo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -36,8 +36,22 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import krypt from "./krypt.png";
+import threads from "./threads.png";
+import flair from "./flair.png";
+import carhub from "./carhub.png";
+import configurator from "./configurator.png";
+import wizard from "./wizard.png";
+
+
 export {
   logo,
+  krypt,
+  threads,
+  configurator,
+  flair,
+  carhub,
+  wizard,
   brandstar,
   miami,
   jmfam,

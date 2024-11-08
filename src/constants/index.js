@@ -25,8 +25,14 @@ import {
   tesla,
   shopify,
   carrent,
+  configurator,
+  flair,
+  krypt,
+  threads,
+  carhub,
   jobit,
   tripguide,
+  wizard,
   threejs,
 } from "../assets";
 
@@ -218,6 +224,69 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Social Threads",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: threads,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Vehicle Configurator",
+    description:
+      "Modern ecommerce platform fully equipped with search, sort and filtering logic, as well as customized Stripe shopping cart checkout functionality.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: configurator,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Script Wizard",
+    description:
+      "Metaverse style gaming app that allows users to traverse a 3D world and learn the principles of Javascript through lesson-based interactions.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wizard,
+    source_code_link: "https://github.com/",
+  },
+  {
     name: "Car Hub",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
@@ -235,7 +304,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: carhub,
     source_code_link: "https://github.com/",
   },
   {
@@ -256,7 +325,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: flair,
     source_code_link: "https://github.com/",
   },
   {
@@ -277,7 +346,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: krypt,
     source_code_link: "https://github.com/",
   },
 ];
