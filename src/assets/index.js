@@ -26,12 +26,23 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import brandstar from "./company/brandstar.png";
+import miami from "./company/miami.png";
+import jmfam from "./company/jmfam.gif";
+import wraphx from "./company/wraphx.png";
+import devs from "./company/100logo.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
   logo,
+  brandstar,
+  miami,
+  jmfam,
+  wraphx,
+  devs,
   backend,
   creator,
   mobile,

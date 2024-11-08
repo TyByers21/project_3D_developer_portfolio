@@ -17,6 +17,11 @@ import {
   docker,
   meta,
   starbucks,
+  wraphx,
+  miami,
+  brandstar,
+  jmfam,
+  devs,
   tesla,
   shopify,
   carrent,
@@ -32,7 +37,11 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -42,15 +51,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Software Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Motion Graphics Designer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "UI/UX Designer",
     icon: backend,
   },
   {
@@ -116,37 +125,48 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "React.js/Three.js Developer",
+    company_name: "Wraphx",
+    icon: wraphx,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Dec 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining 2D and 3D web applications using React.js, Three.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality experiences.",
+      "Implementing responsive web design and ensuring cross-browser compatibility.",
+      "Participating in design reviews and providing constructive feedback to other team designers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Software Developer",
+    company_name: "100 Devs",
+    icon: devs,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2023 - March 2024",
+    points: [
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to build modern and responsive web applications using best practices.",
+      "Building semantically structured front-end and full stack web applications.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Creative Media Director",
+    company_name: "Paton/BrandStar",
+    icon: brandstar,
+    iconBg: "#E6DEDD",
+    date: "May 2017 - Feb 2023",
+    points: [
+      "Create 2D & 3D animations, assets and effects for targeted video advertisements.",
+      "Provide creative input and direction for all visual media projects and video production.",
+      "Edit or Co-edit individual segments for television broadcast and final show assembly.",
+      ],
+  },
+  {
+    title: "Motion Graphics Editor",
+    company_name: "JM Family Enterprises",
+    icon: jmfam,
+    iconBg: "#383E56",
+    date: "Dec 2016 - May 2017",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,11 +175,11 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Audio Visual Tech",
+    company_name: "Miami Dade College",
+    icon: miami,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "March 2015 - Dec 2016",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,7 +218,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Car Hub",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -219,9 +239,9 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Flair",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Modern ecommerce platform fully equipped with search, sort and filtering logic, as well as customized Stripe shopping cart checkout functionality.",
     tags: [
       {
         name: "react",
@@ -240,9 +260,9 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "KRYPT",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web 3.0 Cryptocurrency platform that allows you to connect your metamask wallet and conduct a secure purchase on the blockchain using Solidity technology.",
     tags: [
       {
         name: "nextjs",

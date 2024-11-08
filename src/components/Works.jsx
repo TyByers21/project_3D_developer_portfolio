@@ -20,7 +20,7 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 45,
+          max: 10,
           scale: 1,
           speed: 450,
         }}
@@ -43,6 +43,7 @@ const ProjectCard = ({
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
+              <span>View Source Code</span>
             </div>
           </div>
         </div>
