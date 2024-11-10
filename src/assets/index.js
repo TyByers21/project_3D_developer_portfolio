@@ -1,4 +1,4 @@
-import logo from "/public/tylogo.png";
+import logo from "./tylogo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";

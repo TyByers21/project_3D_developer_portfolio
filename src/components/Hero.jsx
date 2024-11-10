@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import 'boxicons';
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
@@ -9,23 +9,36 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+        
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+        <div className="home-content">
+          <h1 className={`${styles.heroHeadText} orange-text-gradient`}>
             Ty Byers <span className='text-[#915EFF]'></span>
           </h1>
+          <h3 className="text-animation">I'm a <span></span></h3>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           Step into a world where technology meets artistry, and innovation unfolds through code and motion. Turning ideas into visually stunning products is my passion. <br className='sm:block hidden' />
             interfaces and web applications
           </p>
+          <div className="social-icons">
+            <a href="#"><box-icon name='linkedin-square' type='logo' color='#ffffff' ></box-icon></a>
+            <a href="#"><box-icon type='logo' name='github'></box-icon></a>
+            <a href="#"><box-icon type='logo' name='instagram-alt'></box-icon></a>
+            
+           
+          </div>
+          <div className="btn-group">
+            <a href="#" className="btn">Hire</a>
+            <a href="#" className="btn">Contact</a>
+          </div>
+          </div>
+          <div className="home-img">
+            <img src="avatar2.png" alt="" />
+          
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
