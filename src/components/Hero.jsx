@@ -35,13 +35,13 @@ const Hero = () => {
           
           </p>
 
-          <div className="btn-group mt-5">
+          <div className="btn-group mt-4">
             <a href="#projects" className="btn">View My Portfolio</a>
             <a href="#contact" className="btn">Contact</a>
           </div>
           <div className="social-icons">
-            <a className="ml-44" href="#"><box-icon name='linkedin-square' type='logo' color='#000000' ></box-icon></a>
-            <a className="ml-10" href="#"><box-icon type='logo' name='github'></box-icon></a>
+            <a className="" href="https://www.linkedin.com/in/tybyers21" target='blank' ><box-icon name='linkedin-square' type='logo' color='#000000' ></box-icon></a>
+            <a className="ml-10" href="https://github.com/TyByers21?tab=repositories" target='blank'><box-icon type='logo' name='github'></box-icon></a>
             <a className="ml-10" href="#"><box-icon type='logo' name='instagram-alt'></box-icon></a>
 
 

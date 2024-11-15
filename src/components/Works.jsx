@@ -14,6 +14,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  live_link,
   source_code_link,
 }) => {
   return (
@@ -53,7 +54,7 @@ const ProjectCard = ({
         </div>
         <div className='inset-0 flex justify-end m-3 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(live_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img

@@ -34,6 +34,11 @@ import {
   tripguide,
   wizard,
   threejs,
+  gram,
+  solidity,
+  vite,
+  nextjs,
+  blender,
 } from "../assets";
 
 export const navLinks = [
@@ -80,8 +85,8 @@ const technologies = [
     icon: html,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "nextjs",
+    icon: nextjs,
   },
   {
     name: "JavaScript",
@@ -96,8 +101,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "vite",
+    icon: vite,
   },
   {
     name: "Tailwind CSS",
@@ -120,12 +125,12 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "solidity",
+    icon: solidity,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "blender",
+    icon: blender,
   },
 ];
 
@@ -224,25 +229,30 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Social Threads",
+    name: "SocialGram",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based social platform with secure log-in and authentication, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "appwrite",
         color: "pink-text-gradient",
       },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
+      },
     ],
-    image: threads,
-    source_code_link: "https://github.com/",
+    image: gram,
+    live_link: 'https://social-gram-eight.vercel.app/',
+    source_code_link: "https://github.com/TyByers21/social-gram",
   },
   {
     name: "Vehicle Configurator",
@@ -254,16 +264,21 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "three.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "vite",
         color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
       },
     ],
     image: configurator,
-    source_code_link: "https://github.com/",
+    live_link: 'https://hummer-customizer-one.vercel.app/',
+    source_code_link: "https://github.com/TyByers21/hummer-customizer",
   },
   {
     name: "Script Wizard",
@@ -275,15 +290,20 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "three.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "react",
         color: "pink-text-gradient",
+      },
+      {
+        name: "blockly",
+        color: "orange-text-gradient",
       },
     ],
     image: wizard,
+    live_link: 'https://script-wizard.vercel.app/',
     source_code_link: "https://github.com/",
   },
   {
@@ -292,20 +312,25 @@ const projects = [
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "rest-api",
+        color: "orange-text-gradient",
+      },
     ],
     image: carhub,
-    source_code_link: "https://github.com/",
+    live_link: 'https://carhub-bice.vercel.app/',
+    source_code_link: "https://github.com/TyByers21/carhub",
   },
   {
     name: "Flair",
@@ -317,16 +342,21 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "stripe",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "sanity",
         color: "pink-text-gradient",
+      },
+      {
+        name: "ecommerce",
+        color: "orange-text-gradient",
       },
     ],
     image: flair,
-    source_code_link: "https://github.com/",
+    live_link: 'https://flair-app.vercel.app/',
+    source_code_link: "https://github.com/TyByers21/flair-app",
   },
   {
     name: "KRYPT",
@@ -334,20 +364,25 @@ const projects = [
       "Web 3.0 Cryptocurrency platform that allows you to connect your metamask wallet and conduct a secure purchase on the blockchain using Solidity technology.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "solidity",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "vite",
         color: "pink-text-gradient",
       },
     ],
     image: krypt,
-    source_code_link: "https://github.com/",
+    live_link: 'https://krypt-orcin.vercel.app/',
+    source_code_link: "https://github.com/TyByers21/krypt",
   },
 ];
 

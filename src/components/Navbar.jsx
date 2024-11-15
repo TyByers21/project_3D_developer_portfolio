@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-32 h-15 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex logo '>
+          <p className='text-white font-bold cursor-pointer flex logo '>
              
             <span className='sm:block hidden '>Professional Portfolio</span>
           </p>

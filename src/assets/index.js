@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import gram from "./gram.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -20,6 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.png";
+import solidity from "./tech/solidity.png";
+import vite from "./tech/vite.png";
+import blender from "./tech/blender.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -64,11 +68,16 @@ export {
   github,
   menu,
   close,
+  nextjs,
+  vite,
+  solidity,
+  blender,
   css,
   docker,
   figma,
   git,
   html,
+  gram,
   javascript,
   mongodb,
   nodejs,
