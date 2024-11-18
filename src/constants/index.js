@@ -142,10 +142,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "Dec 2023 - Present",
     points: [
-      "Developing and maintaining 2D and 3D web applications using React.js, Three.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality experiences.",
-      "Implementing responsive web design and ensuring cross-browser compatibility.",
-      "Participating in design reviews and providing constructive feedback to other team designers.",
+      "Developed and maintained 2D and 3D web applications using React.js, Three.js and other related technologies, delivering optimized user experiences.",
+      "Collaborated with cross-functional teams including designers, and product managers to create high-quality experiences.",
+      "Developed mobile-first, responsive apps to ensure seamless performance across multiple devices.",
+      "Integrated third-party APIs and tools for analytics, payment processing, and product delivery, streamlining client operations and enhancing user engagement.",
     ],
   },
   {
@@ -155,9 +155,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2023 - March 2024",
     points: [
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to build modern and responsive web applications using best practices.",
-      "Building semantically structured front-end and full stack web applications.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and implemented scalable web applications using modern technologies such as React, Node.js, and MongoDB, delivering optimized user experiences.",
+      "Worked closely with cross-functional teams, including designers, marketers, and project managers, to deliver projects on time and exceed client expectations.",
+      "Integrated third-party APIs and tools for analytics, payment processing, and customer relationship management, streamlining client operations and enhancing user engagement.",
     ],
   },
   {
@@ -167,9 +167,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2017 - Feb 2023",
     points: [
-      "Create 2D & 3D animations, assets and effects for targeted video advertisements.",
-      "Provide creative input and direction for all visual media projects and video production.",
-      "Edit or Co-edit individual segments for television broadcast and final show assembly.",
+      "Led the development and execution of comprehensive visual media strategies.",
+      "Directed high-quality visual content for television programs, commercials, and promotional materials, ensuring alignment with brand identity and audience expectations.",
+      "Supervised post-production processes, including color grading, visual effects, and sound design, utilizing industry-standard tools such as Adobe Creative Suite.",
       ],
   },
   {
@@ -179,10 +179,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "Dec 2016 - May 2017",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created sophisticated motion graphics for corporate presentations, promotional videos, and digital campaigns, enhancing brand messaging and visual appeal.",
+      "Mastered industry-leading tools such as Adobe After Effects, Cinema 4D, and Premiere Pro to deliver high-quality animations and visual effects.",
+      "Partnered with creative directors, designers, and marketing teams to produce seamless graphics aligned with corporate branding and strategic objectives.",
+     'Delivered visually compelling content for global events, product launches, and executive communications, elevating brand perception and audience engagement.',
     ],
   },
   {
@@ -192,37 +192,36 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 2015 - Dec 2016",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Created targeted animations for recruitment and advertisement purposes.",
+      "Audio/Visual assistant responsible for setup, filming and recording of live events.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+     ],
   },
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+      "I thought it was impossible to make a website as beautiful as our products are, but Ty proved me wrong.",
+    name: "Desiree Lee",
     designation: "CFO",
-    company: "Acme Co",
+    company: "HollaGlass",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "I've never met a web developer who truly cares about their clients' project like Ty does.",
+    name: "Musa Coutain",
+    designation: "CEO",
+    company: "KNOW Logic",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "After Ty revamped our website, we saw traffic and engagement increase by 46%. I can't thank him enough!",
+    name: "Aurora Wang",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "REJUVENATRIX",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
@@ -231,7 +230,7 @@ const projects = [
   {
     name: "SocialGram",
     description:
-      "Web-based social platform with secure log-in and authentication, providing a convenient and efficient solution for transportation needs.",
+      "A web-based social platform with secure login and authentication, designed for sharing photos and videos while staying connected with your social circle in real time.",
     tags: [
       {
         name: "react",
@@ -257,7 +256,7 @@ const projects = [
   {
     name: "Vehicle Configurator",
     description:
-      "Modern ecommerce platform fully equipped with search, sort and filtering logic, as well as customized Stripe shopping cart checkout functionality.",
+      "A cutting-edge 3D vehicle configurator that lets users select their specific vehicle, explore customizable wrap designs, adjust colors, and seamlessly purchase their chosen wrap through an integrated e-commerce platform.",
     tags: [
       {
         name: "react",
@@ -286,7 +285,7 @@ const projects = [
       "Metaverse style gaming app that allows users to traverse a 3D world and learn the principles of Javascript through lesson-based interactions.",
     tags: [
       {
-        name: "nextjs",
+        name: "vite",
         color: "blue-text-gradient",
       },
       {

@@ -31,7 +31,7 @@ const Hero = () => {
 
           </h3>
           <p className='mt-2 text-white-200'>
-            Step into a world where technology meets artistry, and innovation unfolds through code and motion. Turning ideas into visually stunning products is my passion. <br className='sm:block hidden' />
+          Enter  a realm where imagination shapes technology, and innovation unfolds through code and motion. Creating visually compelling products that inspire and innovate is my driving force. Allow me to bring your ideas to life through creative design and development. <br className='sm:block hidden' />
           
           </p>
 
