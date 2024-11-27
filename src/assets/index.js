@@ -5,6 +5,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
+import live from './live-50.png'; 
 import close from "./close.svg";
 import gram from "./gram.png";
 import css from "./tech/css.png";
@@ -66,6 +67,7 @@ export {
   mobile,
   web,
   github,
+  live,
   menu,
   close,
   nextjs,

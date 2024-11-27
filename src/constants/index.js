@@ -13,6 +13,7 @@ import {
   nodejs,
   mongodb,
   git,
+  live,
   figma,
   docker,
   meta,
@@ -274,6 +275,10 @@ const projects = [
         name: "tailwind",
         color: "orange-text-gradient",
       },
+      {
+        name: "blender",
+        color: "pink-text-gradient",
+      },
     ],
     image: configurator,
     live_link: 'https://hummer-customizer-one.vercel.app/',
@@ -299,6 +304,10 @@ const projects = [
       {
         name: "blockly",
         color: "orange-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "pink-text-gradient",
       },
     ],
     image: wizard,

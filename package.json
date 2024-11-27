@@ -13,6 +13,7 @@
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.1",
+    "@splinetool/react-spline": "^4.0.0",
     "boxicons": "^2.1.4",
     "caniuse-lite": "^1.0.30001678",
     "framer-motion": "^9.1.7",

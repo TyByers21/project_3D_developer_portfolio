@@ -12,9 +12,9 @@ const Hero = () => {
       >
         <div className="home-content">
           <h1 className={`${styles.heroHeadText} orange-text-gradient`}>
-            Ty Byers 
+            Ty Byers
           </h1>
-          <h3 className="">I'm a <span className="orange-text-gradient"> 
+          <h3 className="sour-gummy">I'm a <span className="orange-text-gradient sour-gummy"> 
             <ReactTyped
               strings={[
                 "Designer...",
@@ -30,7 +30,7 @@ const Hero = () => {
             </span>
 
           </h3>
-          <p className='mt-2 text-white-200'>
+          <p className='mt-2 text-center'>
           Enter  a realm where imagination shapes technology, and innovation unfolds through code and motion. Creating visually compelling products that inspire and innovate is my driving force. Allow me to bring your ideas to life through creative design and development. <br className='sm:block hidden' />
           
           </p>
@@ -43,18 +43,13 @@ const Hero = () => {
             <a className="" href="https://www.linkedin.com/in/tybyers21" target='blank' ><box-icon name='linkedin-square' type='logo' color='#000000' ></box-icon></a>
             <a className="ml-10" href="https://github.com/TyByers21?tab=repositories" target='blank'><box-icon type='logo' name='github'></box-icon></a>
             <a className="ml-10" href="#"><box-icon type='logo' name='instagram-alt'></box-icon></a>
-
-
           </div>
         </div>
         <div className="home-img">
           <img src="avatar2.png" alt="" />
         </div>
       </div>
-
       {/* <ComputersCanvas /> */}
-
-
     </section>
   );
 };

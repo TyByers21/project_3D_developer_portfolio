@@ -9,6 +9,7 @@ import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -27,42 +28,42 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+  //
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent form from refreshing the page
+    setLoading(true);
+  
+    try {
+      await emailjs.send(
+        "service_ip1snu4", // Service ID
+        "template_nszwqhs", // Template ID
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Ty Byers",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "arcanefx21@gmail.com",
           message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
+        }, 
+        "xt18jP4QgYNKxvtJ-" // User ID
       );
+  
+      setLoading(false);
+      alert("Thank you. I will get back to you as soon as possible.");
+  
+      // Reset the form fields
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      setLoading(false);
+      console.error("Error sending email: ", error);
+      alert("Ahh, something went wrong. Please try again.");
+    }
   };
+  
 
   return (
     <div
@@ -87,7 +88,8 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              required
+              placeholder="Your name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -98,7 +100,8 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              required
+              placeholder="Your email address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -109,13 +112,15 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              required
+              placeholder="Hi, I'm interested in..."
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 
           <button
             type='submit'
+            disabled={loading}
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
