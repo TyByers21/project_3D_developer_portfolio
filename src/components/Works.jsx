@@ -20,12 +20,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 10,
-          scale: 1,
-          speed: 450,
-        }}
+      <div
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
@@ -81,8 +76,8 @@ const ProjectCard = ({
             <span className="lg:ml-2 justify-center items-center">Source Code</span>
           
           </div>
-          
-      </Tilt>
+          </div>
+  
     </motion.div>
   );
 };
