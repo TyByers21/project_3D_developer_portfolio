@@ -36,7 +36,7 @@ const Hero = () => {
           </p>
 
           <div className="btn-group mt-4">
-            <a href="#projects" className="btn">View My Portfolio</a>
+            <a href="#projects" className="btn text-center">View My Portfolio</a>
             <a href="#contact" className="btn">Contact</a>
           </div>
           <div className="social-icons">
