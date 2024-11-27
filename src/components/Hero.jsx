@@ -42,7 +42,7 @@ const Hero = () => {
           <div className="social-icons">
             <a className="" href="https://www.linkedin.com/in/tybyers21" target='blank' ><box-icon name='linkedin-square' type='logo' color='#000000' ></box-icon></a>
             <a className="ml-10" href="https://github.com/TyByers21?tab=repositories" target='blank'><box-icon type='logo' name='github'></box-icon></a>
-            <a className="ml-10" href="#"><box-icon type='logo' name='instagram-alt'></box-icon></a>
+         
           </div>
         </div>
         <div className="home-img">
