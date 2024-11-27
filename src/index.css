@@ -437,6 +437,12 @@
   }
 }
 
+/* Example for index.css */
+.project-container {
+  z-index: 100;
+}
+
+
 
 .sour-gummy {
   font-family: "Sour Gummy", sans-serif;

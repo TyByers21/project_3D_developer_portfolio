@@ -281,7 +281,7 @@ const projects = [
       },
     ],
     image: configurator,
-    live_link: 'https://hummer-customizer-one.vercel.app/',
+    live_link: 'https://dark-horse.vercel.app/',
     source_code_link: "https://github.com/TyByers21/hummer-customizer",
   },
   {
