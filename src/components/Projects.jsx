@@ -1,102 +1,109 @@
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { Suspense, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { Center, OrbitControls } from '@react-three/drei';
+import React from "react";
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { github } from "../assets";
+import { live } from "../assets";
+import { projects } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
 
-import { myProjects } from '../newConstants/index.js';
-import CanvasLoader from '../components/Loading.jsx';
-import DemoComputer from '../components/DemoComputer.jsx';
 
-const projectCount = myProjects.length;
-
-const Projects = () => {
-  const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
-
-  const handleNavigation = (direction) => {
-    setSelectedProjectIndex((prevIndex) => {
-      if (direction === 'previous') {
-        return prevIndex === 0 ? projectCount - 1 : prevIndex - 1;
-      } else {
-        return prevIndex === projectCount - 1 ? 0 : prevIndex + 1;
-      }
-    });
-  };
-
-  useGSAP(() => {
-    gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
-  }, [selectedProjectIndex]);
-
-  const currentProject = myProjects[selectedProjectIndex];
-
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  live_link,
+  source_code_link,
+}) => {
   return (
-    <section className="c-space my-20">
-      <p className="head-text">My Selected Work</p>
-
-      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
-          <div className="absolute top-0 right-0">
-            <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
+    
+      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+        <div
+          className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        >
+          <div className='relative w-full h-[230px]'>
+            <img
+              src={image}
+              alt='project_image'
+              className='w-full h-full object-cover rounded-2xl'
+            />
           </div>
 
-          <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg" style={currentProject.logoStyle}>
-            <img className="w-10 h-10 shadow-sm" src={currentProject.logo} alt="logo" />
+          <div className='mt-5'>
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            <p className='mt-2 text-secondary text-[14px]'>{description}</p>
           </div>
 
-          <div className="flex flex-col gap-5 text-white-600 my-5">
-            <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
-
-            <p className="animatedText">{currentProject.desc}</p>
-            <p className="animatedText">{currentProject.subdesc}</p>
+          <div className='mt-4 flex flex-wrap gap-2'>
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
           </div>
-
-          <div className="flex items-center justify-between flex-wrap gap-5">
-            <div className="flex items-center gap-3">
-              {currentProject.tags.map((tag, index) => (
-                <div key={index} className="tech-logo">
-                  <img src={tag.path} alt={tag.name} />
-                </div>
-              ))}
+          <div className="flex flex-col sm:flex-row justify-between gap-4">
+            <div className="flex items-center">
+              <div
+                onClick={() => window.open(live_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img src={live} alt="source code" className="w-1/2 h-1/2 object-contain" />
+              </div>
+              <span className="ml-2 text-sm">View Live Version</span>
             </div>
-
-            <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer">
-              <p>Check Live Site</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
+            <div className="flex items-center">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
+              </div>
+              <span className="ml-2 text-sm">Source Code</span>
+            </div>
           </div>
 
-          <div className="flex justify-between items-center mt-7">
-            <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
-              <img src="/assets/left-arrow.png" alt="left arrow" />
-            </button>
-
-            <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-              <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
-            </button>
-          </div>
         </div>
+      </motion.div>
+   
+  );
+};
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-          <Canvas>
-            <ambientLight intensity={Math.PI} />
-            <directionalLight position={[10, 10, 5]} />
-            <Center>
-              <Suspense fallback={<CanvasLoader />}>
-                <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                  <DemoComputer texture={currentProject.texture} />
-                </group>
-              </Suspense>
-            </Center>
-            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
-          </Canvas>
-        </div>
+ const Projects = () => {
+  return (
+   
+      <section className={`max-w-7xl pt-12 mx-auto relative z-0`}>
+        <div className={`rounded-2xl ${styles.padding}  min-h-[300px]`}>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} `}>My work</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+      </motion.div>
+
+      <div className='w-full flex'>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >
+          The following projects showcase my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to the code repository and a live demo. These examples reflect my
+          ability to solve complex problems, work with different technologies,
+          and manage projects effectively.
+        </motion.p>
+      </div>
+
+      <div className='mt-20 flex flex-wrap  gap-7'>
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
       </div>
     </section>
   );
 };
+
 
 export default Projects;

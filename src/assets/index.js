@@ -39,7 +39,7 @@ import devs from "./company/100logo.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
 
 import krypt from "./krypt.png";
 import threads from "./threads.png";
@@ -94,5 +94,5 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+
 };

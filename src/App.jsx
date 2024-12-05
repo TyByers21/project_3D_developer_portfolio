@@ -1,27 +1,37 @@
-import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas } from "./components";
-
+import React from "react";
+import { Navbar, Hero, About, Experience, Feedbacks, Contact, StarsCanvas } from "./components";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-        </div>
+    <div className="relative z-0 bg-primary">
+      {/* Navbar for navigation */}
+      <Navbar />
+      {/* Sections with IDs for navigation */}
+      <section id="hero">
+        <Hero className="bg-hero-pattern bg-cover bg-no-repeat bg-center" />
+      </section>
+      <section id="about">
         <About />
+      </section>
+      <section id="experience">
         <Experience />
-        {/* <Tech /> */}
-        <Works />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="feedbacks">
         <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+      {/* Background stars canvas */}
+      <div className="absolute inset-0 pointer-events-none">
+        <StarsCanvas />
       </div>
-    </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;
