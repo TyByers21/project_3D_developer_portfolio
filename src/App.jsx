@@ -24,12 +24,11 @@ const App = () => {
         <Feedbacks />
       </section>
       <section id="contact">
-        <Contact />
-      </section>
-      {/* Background stars canvas */}
-      <div className="absolute inset-0 pointer-events-none">
-        <StarsCanvas />
-      </div>
+      <div className='relative z-0'>
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </section>      
     </div>
   );
 };
