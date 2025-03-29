@@ -30,7 +30,7 @@ import {
   flair,
   krypt,
   threads,
-  carhub,
+  suburbia,
   jobit,
   wizard,
   threejs,
@@ -232,6 +232,62 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Suburbia Skate",
+    description:
+      "E-commerce platform that allows users to completely customize their own skateboard using a next-level 3D user interface. Users can purchase their creation directly from the site.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react-fiber",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "full-stack",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: suburbia,
+    live_link: 'https://suburbia-chi.vercel.app/',
+    source_code_link: "https://github.com/TyByers21/suburbia-skate",
+  },
+  {
+    name: "Script Wizard",
+    description:
+      "Metaverse style gaming app that allows users to traverse a 3D world and learn the principles of Javascript through lesson-based interactions.",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "three.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "blockly",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wizard,
+    live_link: 'https://script-wizard.vercel.app/',
+    source_code_link: "https://github.com/",
+  },
+  {
     name: "SocialGram",
     description:
       "A web-based social platform with secure login and authentication, designed for sharing photos and videos while staying connected with your social circle in real time.",
@@ -284,64 +340,8 @@ const projects = [
       },
     ],
     image: configurator,
-    live_link: 'https://dark-horse.vercel.app/',
+    live_link: 'https://hummer-customizer-one.vercel.app/',
     source_code_link: "https://github.com/TyByers21/hummer-customizer",
-  },
-  {
-    name: "Script Wizard",
-    description:
-      "Metaverse style gaming app that allows users to traverse a 3D world and learn the principles of Javascript through lesson-based interactions.",
-    tags: [
-      {
-        name: "vite",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "three.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "blockly",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "appwrite",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: wizard,
-    live_link: 'https://script-wizard.vercel.app/',
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Hub",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: carhub,
-    live_link: 'https://carhub-bice.vercel.app/',
-    source_code_link: "https://github.com/TyByers21/carhub",
   },
   {
     name: "Flair",

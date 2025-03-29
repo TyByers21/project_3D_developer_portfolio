@@ -39,7 +39,7 @@ import devs from "./company/100logo.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-
+import suburbia from '/assets/suburbia.png'
 
 import krypt from "./krypt.png";
 import threads from "./threads.png";
@@ -68,6 +68,7 @@ export {
   web,
   github,
   live,
+  suburbia,
   menu,
   close,
   nextjs,
