@@ -16,6 +16,8 @@ import {
   live,
   figma,
   docker,
+  zenfin,
+  simplebooks,
   meta,
   starbucks,
   wraphx,
@@ -39,28 +41,29 @@ import {
   vite,
   nextjs,
   blender,
+  arcane,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
-    path: "#about"
+    path: "#about",
   },
   {
     id: "work",
     title: "Experience",
-    path: "#experience"
+    path: "#experience",
   },
   {
     id: "projects",
     title: "Projects",
-    path: "#projects"
+    path: "#projects",
   },
   {
     id: "contact",
     title: "Contact",
-    path: "#contact"
+    path: "#contact",
   },
 ];
 
@@ -140,11 +143,24 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Ai Specialist/React Developer",
+    company_name: "Arcane Development Solutions",
+    icon: arcane,
+    iconBg: "#383E56",
+    date: "March 2025 - Present",
+    points: [
+      "Developed Ai chat functionality, trained and integrated Ai Large Language Models (such as OpenAi, Perplexity, Claude) for SMART apps.",
+      "Engineered dynamic and interactive 3D web applications using React.js, Three.js, and modern web technologies, to deliver immersive user experiences.",
+      "Integrated third-party APIs and tools for analytics, user authentication through Firebase, Stripe payment processing, and product delivery, streamlining client operations and enhancing user engagement.",
+      "Developed mobile-first, responsive apps to ensure seamless performance across multiple devices.",
+    ],
+  },
+  {
     title: "React.js/Three.js Developer",
     company_name: "Wraphx",
     icon: wraphx,
     iconBg: "#383E56",
-    date: "Dec 2023 - Present",
+    date: "Dec 2023 - March 2025",
     points: [
       "Developed and maintained 2D and 3D web applications using React.js, Three.js and other related technologies, delivering optimized user experiences.",
       "Collaborated with cross-functional teams including designers, and product managers to create high-quality experiences.",
@@ -174,7 +190,7 @@ const experiences = [
       "Led the development and execution of comprehensive visual media strategies.",
       "Directed high-quality visual content for television programs, commercials, and promotional materials, ensuring alignment with brand identity and audience expectations.",
       "Supervised post-production processes, including color grading, visual effects, and sound design, utilizing industry-standard tools such as Adobe Creative Suite.",
-      ],
+    ],
   },
   {
     title: "Motion Graphics Editor",
@@ -186,7 +202,7 @@ const experiences = [
       "Created sophisticated motion graphics for corporate presentations, promotional videos, and digital campaigns, enhancing brand messaging and visual appeal.",
       "Mastered industry-leading tools such as Adobe After Effects, Cinema 4D, and Premiere Pro to deliver high-quality animations and visual effects.",
       "Partnered with creative directors, designers, and marketing teams to produce seamless graphics aligned with corporate branding and strategic objectives.",
-     'Delivered visually compelling content for global events, product launches, and executive communications, elevating brand perception and audience engagement.',
+      "Delivered visually compelling content for global events, product launches, and executive communications, elevating brand perception and audience engagement.",
     ],
   },
   {
@@ -199,7 +215,7 @@ const experiences = [
       "Created targeted animations for recruitment and advertisement purposes.",
       "Audio/Visual assistant responsible for setup, filming and recording of live events.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-     ],
+    ],
   },
 ];
 
@@ -232,6 +248,28 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Simple Books",
+    description:
+      "Simple Books is a robust Ai powered bookkeeping software with a sleek, modern UI design.  It utilizes Perplexity's Sonar Ai model, Firebase for secure user authentication, and a 3 tier subscription model incorporated thru Stripe's payment platform.",
+    tags: [
+      {
+        name: "Perplexity Ai",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: simplebooks,
+    live_link: "https://simplebooks.replit.app/",
+    source_code_link: "https://github.com/TyByers21/simplebooks",
+  },
+  {
     name: "Suburbia Skate",
     description:
       "E-commerce platform that allows users to completely customize their own skateboard using a next-level 3D user interface. Users can purchase their creation directly from the site.",
@@ -254,8 +292,30 @@ const projects = [
       },
     ],
     image: suburbia,
-    live_link: 'https://suburbia-chi.vercel.app/',
+    live_link: "https://suburbia-chi.vercel.app/",
     source_code_link: "https://github.com/TyByers21/suburbia-skate",
+  },
+  {
+    name: "Zen Financial",
+    description:
+      "ZenFin is an Ai powered personal finance tracker, utilizing Perplexity Ai's LLM, and Supabase authentication for secure login and logout functionality.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Perplexity Ai",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: zenfin,
+    live_link: "https://zenfin.vercel.app/",
+    source_code_link: "https://github.com/Rejuvenatrix/pocket-pal-ai-plus",
   },
   {
     name: "Script Wizard",
@@ -284,7 +344,7 @@ const projects = [
       },
     ],
     image: wizard,
-    live_link: 'https://script-wizard.vercel.app/',
+    live_link: "https://script-wizard.vercel.app/",
     source_code_link: "https://github.com/",
   },
   {
@@ -310,7 +370,7 @@ const projects = [
       },
     ],
     image: gram,
-    live_link: 'https://social-gram-eight.vercel.app/',
+    live_link: "https://social-gram-eight.vercel.app/",
     source_code_link: "https://github.com/TyByers21/social-gram",
   },
   {
@@ -340,7 +400,7 @@ const projects = [
       },
     ],
     image: configurator,
-    live_link: 'https://hummer-customizer-one.vercel.app/',
+    live_link: "https://hummer-customizer-one.vercel.app/",
     source_code_link: "https://github.com/TyByers21/hummer-customizer",
   },
   {
@@ -366,7 +426,7 @@ const projects = [
       },
     ],
     image: flair,
-    live_link: 'https://flair-app.vercel.app/',
+    live_link: "https://flair-app.vercel.app/",
     source_code_link: "https://github.com/TyByers21/flair-app",
   },
   {
@@ -392,7 +452,7 @@ const projects = [
       },
     ],
     image: krypt,
-    live_link: 'https://krypt-orcin.vercel.app/',
+    live_link: "https://krypt-orcin.vercel.app/",
     source_code_link: "https://github.com/TyByers21/krypt",
   },
 ];

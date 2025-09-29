@@ -5,7 +5,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
-import live from './live-50.png'; 
+import live from "./live-50.png";
 import close from "./close.svg";
 import gram from "./gram.png";
 import css from "./tech/css.png";
@@ -36,10 +36,11 @@ import miami from "./company/miami.png";
 import jmfam from "./company/jmfam.gif";
 import wraphx from "./company/wraphx.png";
 import devs from "./company/100logo.png";
+import arcane from "./company/arcane.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import suburbia from '/assets/suburbia.png'
+import suburbia from "/assets/suburbia.png";
 
 import krypt from "./krypt.png";
 import threads from "./threads.png";
@@ -47,7 +48,8 @@ import flair from "./flair.png";
 import carhub from "./carhub.png";
 import configurator from "./configurator.png";
 import wizard from "./wizard.png";
-
+import simplebooks from "./simplebooks.png";
+import zenfin from "./zenfin.png";
 
 export {
   logo,
@@ -68,6 +70,8 @@ export {
   web,
   github,
   live,
+  simplebooks,
+  zenfin,
   suburbia,
   menu,
   close,
@@ -81,6 +85,7 @@ export {
   git,
   html,
   gram,
+  arcane,
   javascript,
   mongodb,
   nodejs,
@@ -95,5 +100,4 @@ export {
   tesla,
   carrent,
   jobit,
-
 };
