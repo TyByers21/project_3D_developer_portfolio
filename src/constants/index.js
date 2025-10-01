@@ -295,28 +295,28 @@ const projects = [
     live_link: "https://suburbia-chi.vercel.app/",
     source_code_link: "https://github.com/TyByers21/suburbia-skate",
   },
-  {
-    name: "Zen Financial",
-    description:
-      "ZenFin is an Ai powered personal finance tracker, utilizing Perplexity Ai's LLM, and Supabase authentication for secure login and logout functionality.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Perplexity Ai",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Supabase",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: zenfin,
-    live_link: "https://zenfin.vercel.app/",
-    source_code_link: "https://github.com/Rejuvenatrix/pocket-pal-ai-plus",
-  },
+  // {
+  //   name: "Zen Financial",
+  //   description:
+  //     "ZenFin is an Ai powered personal finance tracker, utilizing Perplexity Ai's LLM, and Supabase authentication for secure login and logout functionality.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Perplexity Ai",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "Supabase",
+  //       color: "orange-text-gradient",
+  //     },
+  //   ],
+  //   image: zenfin,
+  //   live_link: "https://zenfin.vercel.app/",
+  //   source_code_link: "https://github.com/Rejuvenatrix/pocket-pal-ai-plus",
+  // },
   {
     name: "Script Wizard",
     description:
@@ -400,7 +400,7 @@ const projects = [
       },
     ],
     image: configurator,
-    live_link: "https://hummer-customizer-one.vercel.app/",
+    live_link: "https://hummer-customizer.vercel.app/",
     source_code_link: "https://github.com/TyByers21/hummer-customizer",
   },
   {
